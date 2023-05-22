@@ -1,0 +1,33 @@
+<!-- Footer section -->
+{{ $alpine := resources.Get "js/alpine.js" | js.Build }}
+<script src="{{ $alpine.RelPermalink }}" defer></script>
+{{ $js := resources.Get "js/darkmode.js" | js.Build }}
+<script src="{{ $js.RelPermalink }}" defer></script>
+<footer class="bg-gray-900">
+    <div class="max-w-md px-4 py-12 mx-auto overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+        <nav class="flex flex-wrap justify-center -mx-5 -my-2" aria-label="Footer">
+            <div class="px-5 py-2">
+                <a href="https://bit.ly/PET003" class="text-base text-gray-400 hover:text-gray-300">Tratamiento de Botellas</a>
+            </div>
+
+
+            <div class="px-5 py-2">
+                <a href="https://bit.ly/PET001" class="text-base text-gray-400 hover:text-gray-300">Prototipo</a>
+            </div>
+
+            <div class="px-5 py-2">
+                <a href="https://bit.ly/PET002" class="text-base text-gray-400 hover:text-gray-300">Filamento</a>
+            </div>
+
+            <div class="px-5 py-2">
+                <a href="https://bit.ly/PET004" class="text-base text-gray-400 hover:text-gray-300">Contacta con nosotros</a>
+            </div>
+        </nav>
+        
+
+    </div>
+
+
+
+
+</footer>
